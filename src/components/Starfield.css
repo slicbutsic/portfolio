@@ -1,0 +1,10 @@
+/* Starfield.css */
+.starfield-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensure the starfield is in the background */
+  background-color: black; /* Starry night sky background */
+}
