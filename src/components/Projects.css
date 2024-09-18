@@ -7,8 +7,7 @@
 }
 .projectPhotoOne {
   /* width: 60%; */
-
-  /* width: 100%; */ 
+  /* width: 100%; */
   width: 1500px;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Makes sure the image covers the container */
