@@ -24,23 +24,20 @@ export const Navbar = () => {
       <div
         className={`fixed top-0 left-0 h-full bg-white transition-transform transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        } w-64`}
+        } w-96`}
       >
         <div className='text-black p-4'>
           {/* Close Button */}
-          <div className='flex justify-end'>
+          <div className='flex justify-start mt-8 ml-12'>
             <button onClick={toggleSidebar}>
-              <FontAwesomeIcon className='text-black h-5' icon={faTimes} />
+              <FontAwesomeIcon className='text-black h-8' icon={faTimes} />
             </button>
           </div>
 
-          {/* Sidebar Content */}
-          {/* <h1 className='text-lg font-bold mb-6'>Menu</h1> */}
           <ul>
-            <li className='mb-4'><a href='#'>Home</a></li>
-            <li className='mb-4'><a href='#'>About</a></li>
-            <li className='mb-4'><a href='#'>Contact</a></li>
-            <li className='mb-4'><a href='#'>Services</a></li>
+            <li className='mb-8 mt-32 flex justify-center text-black text-4xl font-thin tracking-widest transform transition-transform duration-700 hover:scale-[1.2]'><a href='#'>Home</a></li>
+            <li className='mb-8 flex justify-center text-black text-4xl font-thin tracking-widest transform transition-transform duration-700 hover:scale-[1.2]'><a href='#'>Projects</a></li>
+            <li className='mb-8 flex justify-center text-black text-4xl font-thin tracking-widest transform transition-transform duration-700 hover:scale-[1.2]'><a href='#'>Contact</a></li>
           </ul>
         </div>
       </div>
