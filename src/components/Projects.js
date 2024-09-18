@@ -14,7 +14,7 @@ export const Projects = () => {
 
   return (
     <>
-      <div className='background-projects'>
+      <div className='divProjects'>
         <h4
           className={` text-white projects hover:cursor-pointer ${moveDiagonal ? 'move-diagonal' : ''}`}
           onClick={toggleProjects}

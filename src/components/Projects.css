@@ -1,7 +1,12 @@
-.background-projects {
-  background-color: #ffffff;
-  padding: 50px 0;
-  margin-top: 250px;
+.divProjects {
+  height: 400px;
+  /* background-color: #ffffff; */
+  /* padding: 50px 0; */
+  /* margin-top: 250px; */
+}
+
+.rocket {
+  font-size: 30px;
 }
 
 .projects {
@@ -21,6 +26,3 @@
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Makes sure the image covers the container */
 }
-
-
-

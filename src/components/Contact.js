@@ -1,4 +1,5 @@
 import './Contact.css';
+import { SendEmail } from './SendEmail';
 
 export const Contact = () => {
   return (
@@ -30,6 +31,17 @@ export const Contact = () => {
           <p className='locationAnswer' >Australia</p>
         </div>
       </div>
+
+
+
+      <SendEmail />
+
+
+
+
+
+
+
     </>
   )
 }
