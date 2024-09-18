@@ -1,19 +1,128 @@
-.getInTouch {
-  height: 500px;
-}
-
-.phone, .email, .location {
+/* Container for contact information and form */
+.contact-container {
   display: flex;
-  margin-top: 20px;
-  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh;
 }
 
-.locationIcon {
-  font-size: 30px;
+/* Contact information styling */
+.getInTouch {
+  flex: 1;
+  max-width: 500px;
+}
+
+.email, .phone, .location {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .emailAnswer, .phoneAnswer, .locationAnswer {
   font-size: 20px;
   margin-left: 30px;
   margin-top: 14px;
+}
+
+/* Form container styling */
+#contact {
+  flex: 1;
+  padding: 2rem;
+  background-color: #333;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+/* Section heading */
+#contact h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form styling */
+.formContact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Labels styling */
+.form-group label {
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Input and textarea styling */
+input[type='text'],
+input[type='email'],
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Textarea specific styling */
+textarea {
+  resize: vertical;
+}
+
+.shootMessage {
+  background-color: white;
+  color: #4831d4;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.shootMessage svg {
+  height: 1em;
+  width: auto;
+  color: #4831d4;
+}
+
+.shootMessage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, grey, white);
+  transition: left 0.8s ease;
+  z-index: 0;
+}
+
+.shootMessage:hover::before {
+  left: 100%;
+}
+
+.shootMessage:hover {
+  color: white;
+  background-color: #4831d4;
+}
+
+.shootMessage:hover svg {
+  color: white;
 }
