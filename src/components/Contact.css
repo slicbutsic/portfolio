@@ -1,0 +1,19 @@
+.getInTouch {
+  height: 500px;
+}
+
+.phone, .email, .location {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.locationIcon {
+  font-size: 30px;
+}
+
+.emailAnswer, .phoneAnswer, .locationAnswer {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 14px;
+}

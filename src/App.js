@@ -1,9 +1,8 @@
 import './App.css';
-// import './components/Projects.css';
+import { Contact } from './components/Contact';
 import { Navbar } from './components/Navbar';
-// import { Me } from './Me';
 import { Starfield } from './components/Starfield';
-// import { Projects } from './components/Projects';
+
 
 
 
@@ -12,6 +11,7 @@ function App() {
     <div>
       <Navbar />
       <Starfield />
+      <Contact />
     </div>
   );
 }

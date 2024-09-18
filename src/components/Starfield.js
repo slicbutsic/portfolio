@@ -3,6 +3,7 @@ import StarfieldAnimation from 'react-starfield';
 import './Starfield.css';
 import { Me } from './Me';
 import { Projects } from './Projects';
+import { Logos } from './Logos';
 
 export const Starfield = () => {
   return (
@@ -14,9 +15,9 @@ export const Starfield = () => {
         // lineWidth={1.2}
         // starRadius={0.7}
       />
+      <Logos />
       <Me />
       <Projects />
-
     </div>
   );
 };

@@ -1,14 +1,26 @@
+.background-projects {
+  background-color: #ffffff;
+  padding: 50px 0;
+  margin-top: 250px;
+}
+
 .projects {
   font-size: 30px;
-  margin-top: -160px;
-  /* margin-top: 10px; */
+  margin-top: 0; /* Default position */
   display: flex;
   justify-content: center;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
 }
+
+.move-diagonal {
+  transform: translate(800px, -800px); /* Adjust values for the desired diagonal movement */
+}
+
 .projectPhotoOne {
-  /* width: 60%; */
-  /* width: 100%; */
   width: 1500px;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Makes sure the image covers the container */
 }
+
+
+

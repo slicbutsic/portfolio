@@ -1,6 +1,14 @@
+.nameAndJobPrimaryDiv {
+  padding: 1rem;
+  margin-left: 450px;
+  /* height: 500px; */
+}
+
 .nameAndJob {
-  display: flex;
-  flex-direction: column;
-  margin-top: 180px;
-  margin-left: 200px;
+  text-align: left;
+}
+
+.avatar {
+  width: 240px;
+  height: 300px;
 }
