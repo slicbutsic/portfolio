@@ -9,6 +9,14 @@
   font-size: 30px;
 }
 
+.projectBoxes {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+
+  gap: 5rem; /* Space between projects */
+}
+
+
 .projects {
   font-size: 30px;
   margin-top: 0; /* Default position */
@@ -25,4 +33,9 @@
   width: 1500px;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Makes sure the image covers the container */
+}
+
+.move-back {
+  transform: translate(0, 0) rotate(180deg); /* Rotate 180 degrees for the return */
+  /* transition: transform 0.5s ease-in; */
 }
