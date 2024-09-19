@@ -1,41 +1,62 @@
-.divProjects {
-  height: 600px;
-  /* background-color: #ffffff; */
+.projectsContainer {
+  background-color: red;
+  height: 90vh;
+}
+
+.projectH2 {
   display: flex;
-  align-items: center;
   justify-content: center;
-  /* padding: 50px 0; */
-  /* margin-top: 250px; */
 }
 
-.projects {
-  font-size: 100px;
-  /* margin-top: 60px;  */
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
-}
-
-.projectBoxes {
+.projectContainer {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-
-  gap: 5rem; /* Space between projects */
+  justify-content: center;
+  padding: 20px;
 }
 
-
-.move-diagonal {
-  transform: translate(800px, -800px); /* Adjust values for the desired diagonal movement */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
 }
 
-.projectPhotoOne {
-  width: 1500px;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Makes sure the image covers the container */
+.projectCard {
+  position: relative; /* For absolute positioning inside */
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Ensure content doesn't overflow */
 }
 
-.move-back {
-  transform: translate(0, 0) rotate(180deg); /* Rotate 180 degrees for the return */
-  /* transition: transform 0.5s ease-in; */
+.projectCard:hover {
+  transform: scale(1.05);
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.projectText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.projectCard:hover .projectText {
+  opacity: 1; /* Show text on hover */
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add background for better contrast */
+  padding: 10px;
+  border-radius: 10px;
 }
