@@ -1,4 +1,4 @@
-import './Contact.css';
+import './contact.css';
 // import { SendEmail } from './SendEmail';
 import { useEffect } from 'react';
 import emailjs from 'emailjs-com';

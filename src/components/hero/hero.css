@@ -1,0 +1,39 @@
+/* Hero Container: */
+
+.heroContainer {
+  height: 90vh;
+}
+
+/* Logos: */
+
+.logos {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  margin: -50px 80px 0 0;
+}
+
+.linkedinLogo {
+  height: 28px;
+  margin: 6px 5px 0 10px;
+}
+
+.instaLogo {
+  height: 40px;
+}
+
+.githubLogo {
+  height: 28px;
+  margin: 5px 0 0 10px;
+}
+
+/* ------------------------------ */
+/* Text: */
+
+.nameAndJobPrimaryDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 200px 150px 0 0;
+
+}

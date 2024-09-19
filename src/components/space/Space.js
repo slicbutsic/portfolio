@@ -1,11 +1,11 @@
 import React from 'react';
 import StarfieldAnimation from 'react-starfield';
-import './Starfield.css';
-import { Me } from './Me';
-import { Projects } from './Projects';
-import { Logos } from './Logos';
+import './space.css';
+// import { Hero } from '../hero/Hero';
+// import { Projects } from '../projects/Projects';
 
-export const Starfield = () => {
+
+export const Space = () => {
   return (
     <div className="starfield-container">
       <StarfieldAnimation
@@ -15,10 +15,8 @@ export const Starfield = () => {
         // lineWidth={1.2}
         // starRadius={0.7}
       />
-      <Logos />
-      <Me />
-      <Projects />
-      
+      {/* <Projects /> */}
+
     </div>
   );
 };

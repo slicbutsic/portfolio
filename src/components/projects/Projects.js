@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import './Projects.css';
-import projectOne from '../images/projectOne.png';
-import projectTwo from '../images/projectTwo.png';
+import './projects.css';
+import projectOne from '../../images/projectOne.png';
+import projectTwo from '../../images/projectTwo.png';
+
 
 export const Projects = () => {
   const [showProjects, setShowProjects] = useState(false); // State to control visibility
@@ -55,16 +56,14 @@ export const Projects = () => {
   return (
     <>
       <div className='divProjects'>
-      <h4
-  className={`text-white projects hover:cursor-pointer
-    ${moveDiagonal ? 'move-diagonal' : ''}
-    ${moveBack ? 'move-back' : ''}`}
-  onClick={toggleProjects}
->
-  🚀
-</h4>
-
-
+        <h4
+          className={`text-white projects hover:cursor-pointer
+            ${moveDiagonal ? 'move-diagonal' : ''}
+            ${moveBack ? 'move-back' : ''}`}
+          onClick={toggleProjects}
+        >
+           🚀
+        </h4>
         {showProjects && ( // Conditionally render this part
           <div className='projectBoxes'>
             {projects.map((project, index) => (
