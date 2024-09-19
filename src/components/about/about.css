@@ -3,8 +3,75 @@
   height: 100vh;
 }
 
-.avatar {
-  width: 240px;
-  height: 300px;
+.aboutMeText {
+  width: 90%;
+  font-size: 18px;
 }
 
+
+.CV {
+  width: 200px;
+  height: 300px;
+  cursor: pointer;
+}
+
+/* about.css */
+.CV {
+  cursor: pointer;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.zoomable {
+  transition: transform 0.3s ease;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bg-gray-800 {
+  background-color: #333;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
+.overflow-auto {
+  overflow: auto;
+}

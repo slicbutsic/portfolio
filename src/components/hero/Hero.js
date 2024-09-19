@@ -9,11 +9,20 @@ export const Hero = () => {
   return (
     <>
       <div className='heroContainer'>
-        <div className='logos' >
-          <img className='instaLogo' src={instagram} alt="" />
-          <img className='linkedinLogo' src={linkedin} alt="" />
-          <img className='githubLogo' src={github} alt="" />
+        <div className='logos'>
+          <a className='urlLink' href="https://www.linkedin.com/in/siviglialucas/" target="_blank" rel="noopener noreferrer">
+            <img className='linkedinLogo' src={linkedin} alt="LinkedIn" />
+          </a>
+          <a className='urlLink' href="https://github.com/slicbutsic" target="_blank" rel="noopener noreferrer">
+            <img className='githubLogo urlLink' src={github} alt="GitHub" />
+          </a>
+          <a className='urlLink' href="https://www.instagram.com/siviglialucas/" target="_blank" rel="noopener noreferrer">
+            <img className='instaLogo' src={instagram} alt="Instagram" />
+          </a>
         </div>
+
+
+
 
         <div className='flex items-center justify-between nameAndJobPrimaryDiv'>
           <div className='nameAndJob'>

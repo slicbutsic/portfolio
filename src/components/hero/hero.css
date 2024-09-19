@@ -1,33 +1,48 @@
-/* Hero Container: */
-
-.heroContainer {
+/* Big Div */
+.heroContainer{
   height: 100vh;
 }
 
-/* Logos: */
-
-.logos {
-  display: flex;
-  justify-content: end;
-  align-items: start;
-  margin: -50px 80px 0 0;
-}
-
-.linkedinLogo {
-  height: 28px;
-  margin: 6px 5px 0 10px;
+/* Logos */
+.logos img {
+  display: block;
+  width: auto;
+  object-fit: contain;
 }
 
 .instaLogo {
-  height: 40px;
+  height: 28px;
+}
+
+.logos a {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -30px 30px 0 0;
+  gap: 10px;
+}
+
+.linkedinLogo{
+  height: 30px;
+  margin-bottom: 5px;
 }
 
 .githubLogo {
-  height: 28px;
-  margin: 5px 0 0 10px;
+  height: 29px;
+  margin-bottom: 7px;
 }
 
-/* ------------------------------ */
+.instaLogo {
+  height: 43px;
+  margin-bottom: 4px;
+}
+
 /* Text: */
 
 .nameAndJobPrimaryDiv {
@@ -35,5 +50,4 @@
   justify-content: center;
   align-items: flex-start;
   margin: 200px 150px 0 0;
-
 }

@@ -1,62 +1,17 @@
 .projectsContainer {
-  background-color: red;
   height: 90vh;
+  margin: 0 auto; /* Centers the container horizontally */
+  max-width: 1200px; /* Set a max-width to prevent the container from stretching too wide */
+  padding: 0 1rem; /* Optional: Add some padding on the sides */
 }
 
-.projectH2 {
-  display: flex;
-  justify-content: center;
+.projectHeading {
+  margin: 50px 0 50px 0%;
 }
 
-.projectContainer {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-.projectGrid {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 800px;
-  width: 100%;
-}
-
-.projectCard {
-  position: relative; /* For absolute positioning inside */
-  border: 2px solid #ccc;
-  padding: 10px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  overflow: hidden; /* Ensure content doesn't overflow */
-}
-
-.projectCard:hover {
-  transform: scale(1.05);
-}
-
-.projectImage {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-}
-
-.projectText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease; /* Smooth transition */
-}
-
-.projectCard:hover .projectText {
-  opacity: 1; /* Show text on hover */
-  background: rgba(0, 0, 0, 0.5); /* Optional: Add background for better contrast */
-  padding: 10px;
-  border-radius: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the grid layout */
+  gap: 1rem; /* Adjust the gap between cards */
+  justify-items: center; /* Center the items within each grid cell */
 }
