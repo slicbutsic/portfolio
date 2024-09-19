@@ -24,7 +24,7 @@ const Mountains = () => {
       }}
     >
       <motion.h1 style={{ y: yText }}>
-        Projects
+        Creating Ideas
       </motion.h1>
       <motion.div
         className="stars"

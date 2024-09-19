@@ -1,4 +1,10 @@
+.aboutContainer {
+  /* background-color: red; */
+  height: 100vh;
+}
+
 .avatar {
   width: 240px;
   height: 300px;
 }
+
