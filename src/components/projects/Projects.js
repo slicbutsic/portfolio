@@ -2,8 +2,6 @@ import React from 'react';
 import projectOne from '../../images/projectOne.png';
 import projectTwo from '../../images/projectTwo.png';
 import './projects.css';
-import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
-
 
 // Array of projects with image, name, description, and URL
 const projects = [
@@ -26,21 +24,22 @@ export const Projects = () => {
   return (
     <div className="projectsContainer">
       <h2 className="projectHeading text-white text-5xl font-thin tracking-widest mb-8 text-center">Projects</h2>
-      <div className="grid gap-8">
+      <div className="box-projects grid gap-8">
         {projects.map((project, index) => (
           <a
             key={index}
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-lg shadow-md bg-transparent border border-gray-300 flex flex-col items-center"
+            className="p-4 rounded-lg shadow-md border border-gray-700 flex flex-col items-center bg-[rgba(24,24,27,0.9)]"
+
           >
             <div className="text-white text-lg mb-4 text-center">
               <h3 className="text-xl font-semibold">{project.name}</h3> {/* Project name above the image */}
             </div>
             <div className="relative overflow-hidden rounded-lg h-48 w-full flex justify-center">
               <img
-                className="transition-transform duration-300 ease-in-out transform hover:scale-110 w-auto h-full object-contain"
+                className="transition-transform duration-300 ease-in-out transform hover:scale-110 w-auto h-32 object-contain rounded-sm"
                 src={project.image}
                 alt={project.name}
               />
@@ -52,21 +51,7 @@ export const Projects = () => {
         ))}
       </div>
 
-      <Card className="py-4">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">Daily Mix</p>
-        <small className="text-default-500">12 Tracks</small>
-        <h4 className="font-bold text-large">Frontend Radio</h4>
-      </CardHeader>
-      <CardBody className="overflow-visible py-2">
-        <Image
-          alt="Card background"
-          className="object-cover rounded-xl"
-          src="https://nextui.org/images/hero-card-complete.jpeg"
-          width={270}
-        />
-      </CardBody>
-      </Card>
+
 
 
     </div>

@@ -1,4 +1,5 @@
 .projectsContainer {
+  /* background-color: red; */
   height: 90vh;
   margin: 0 auto; /* Centers the container horizontally */
   max-width: 1200px; /* Set a max-width to prevent the container from stretching too wide */
@@ -7,6 +8,7 @@
 
 .projectHeading {
   margin: 50px 0 50px 0%;
+  /* background-color: aqua; */
 }
 
 .grid {
@@ -15,3 +17,4 @@
   gap: 1rem; /* Adjust the gap between cards */
   justify-items: center; /* Center the items within each grid cell */
 }
+
