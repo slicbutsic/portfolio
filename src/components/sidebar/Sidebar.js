@@ -49,7 +49,7 @@ const itemVariants = {
 };
 
 export const Sidebar = () => {
-  const items = ["Homepage", "Projects", "About", "Contact"];
+  const items = ["Home", "Projects", "About", "Contact"];
   const [open, setOpen] = useState(false);
 
   const toggleSidebar = () => setOpen(!open);

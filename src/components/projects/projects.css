@@ -18,5 +18,33 @@
 
 .projectCard {
   width: 320px;
-  background-color: #333333;
+  /* background-color: #333333; */
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
+
+.visitButton {
+  position: relative; /* Ensure the button is positioned relative for the before element */
+  overflow: hidden; /* Hide overflow to prevent the gradient from showing outside */
+}
+
+.visitButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start off-screen to the left */
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, gray, white); /* Gradient from gray to white */
+  transition: left 0.8s ease; /* Transition for sliding effect */
+  z-index: 0; /* Behind the text */
+}
+
+.visitButton:hover::before {
+  left: 100%; /* Slide to the right on hover */
+}
+
+.visitButton:hover {
+  color: white; /* Change text color on hover */
+  background-color: #4831d4; /* Change background color on hover */
 }

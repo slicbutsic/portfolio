@@ -59,13 +59,16 @@ export const Projects = () => {
                     </svg>
                   </a>
                   <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white text-black font-semibold py-1 px-3 rounded hover:bg-gray-200 transition duration-200"
-                  >
-                    Visit
-                  </a>
+  href={project.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="relative inline-flex items-center justify-center gap-2 bg-white text-[#4831d4] font-thin tracking-widest p-1 px-4 rounded overflow-hidden cursor-pointer visitButton"
+>
+  Visit
+  <span className="absolute top-0 left-[-100%] h-full w-full bg-gradient-to-r from-gray-500 to-white transition-all duration-300 ease-in-out"></span>
+</a>
+
+
                 </div>
               </div>
             </div>
