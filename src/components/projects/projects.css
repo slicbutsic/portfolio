@@ -46,3 +46,13 @@
   color: white;
   background-color: #4831d4;
 }
+
+@media (max-width: 723px) {
+  .grid {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+  .projectCard {
+    width: 90%; /* Make the card 90% of the container's width */
+    max-width: 350px;
+  }
+}

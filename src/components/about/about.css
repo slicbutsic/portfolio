@@ -49,3 +49,109 @@
   gap: 20px;
   margin-top: 30px;
 }
+
+@media (max-width: 767.98px) {
+  .aboutContainer {
+    height: 100vh;
+  }
+
+  .backgroundBoxAbout {
+    background-color: rgba(51, 51, 51, 0.9);
+    height: 90vh;
+    width: 100%;
+  }
+
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutMeText {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .downloadCV {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .downloadCV::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, gray, white);
+    transition: left 0.8s ease;
+    z-index: 0;
+  }
+
+  .downloadCV:hover::before {
+    left: 100%;
+  }
+
+  .downloadCV:hover {
+    color: white;
+    background-color: #4831d4;
+  }
+
+  .skillIcons {
+    gap: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .aboutContainer {
+    height: 100vh;
+  }
+
+  .backgroundBoxAbout {
+    background-color: rgba(51, 51, 51, 0.9);
+    height: 90vh;
+    width: 100%;
+  }
+
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutMeText {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .downloadCV {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .downloadCV::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, gray, white);
+    transition: left 0.8s ease;
+    z-index: 0;
+  }
+
+  .downloadCV:hover::before {
+    left: 100%;
+  }
+
+  .downloadCV:hover {
+    color: white;
+    background-color: #4831d4;
+  }
+
+  .skillIcons {
+    gap: 20px;
+    margin-top: 30px;
+  }
+}

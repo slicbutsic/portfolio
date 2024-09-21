@@ -62,7 +62,7 @@ export const Contact = () => {
       </div>
       {/* Contact Form */}
       <section id='contact' className='container'>
-        <h2 className="text-white text-xl font-thin tracking-widest ">Send me a message!</h2>
+        <h2 className="text-white text-3xl font-thin tracking-widest ">Shoot me a message!</h2>
         <form className='formContact' onSubmit={sendMail}>
           <div className='form-group'>
             <label className="text-white" htmlFor='name'>Name</label>

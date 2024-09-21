@@ -117,3 +117,15 @@ textarea {
 .shootMessage:hover svg {
   color: white;
 }
+
+@media (max-width: 575.98px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .getInTouch {
+    margin-bottom: 2rem;
+  }
+  #contact {
+    width: 100%;
+  }
+}

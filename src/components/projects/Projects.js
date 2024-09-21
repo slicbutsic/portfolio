@@ -24,7 +24,7 @@ export const Projects = () => {
   return (
     <>
       <div id='projects' className="projectsContainer">
-        <h2 className="projectHeading text-white text-5xl font-thin tracking-widest mb-8 text-center">Projects</h2>
+        <h2 className="projectHeading text-white text-3xl font-thin tracking-widest mb-8 text-center">Projects</h2>
         <div className="box-projects grid gap-8">
           {projects.map((project, index) => (
             <div

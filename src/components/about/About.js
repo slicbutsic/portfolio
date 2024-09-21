@@ -5,7 +5,6 @@ export const About = () => {
   return (
     <div id="about" className="flex justify-center items-center aboutContainer">
       <div className="bg-white p-4 rounded-lg shadow-lg backgroundBoxAbout">
-
         <div className="text-center aboutMeText">
           <h2 className="text-white text-3xl font-thin tracking-widest mb-4 text-left aboutMe">
             About
