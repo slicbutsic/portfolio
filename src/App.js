@@ -3,11 +3,10 @@ import { NextUIProvider } from '@nextui-org/react';
 import './App.css';
 import { Sidebar } from './components/sidebar/Sidebar';
 import { Hero } from './components/hero/Hero';
-import { Contact } from './components/contact/Contact';
 import { Projects } from './components/projects/Projects';
-// import { Navbar } from './components/navbar/Navbar';
-import { Space } from './components/space/Space';
 import { About } from './components/about/About';
+import { Contact } from './components/contact/Contact';
+import { Space } from './components/space/Space';
 import Parallax from './components/mountains/Mountains';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
     <NextUIProvider>
       <div>
         <Sidebar />
-        {/* <Navbar /> */}
         <Hero />
         <Space />
         <section id="Services">
