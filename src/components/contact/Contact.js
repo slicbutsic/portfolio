@@ -22,7 +22,6 @@ export const Contact = () => {
     emailjs.send("service_bqs8yqk", "template_7s3c345", parms)
       .then((result) => {
         toast.success("Email sent successfully!");
-        // Clear input fields after successful submission
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('subject').value = '';

@@ -12,9 +12,9 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 400px; /* Desired width */
-  background: white; /* Background color */
-  overflow: hidden; /* Prevent overflow when closed */
+  width: 400px;
+  background: white;
+  overflow: hidden;
 }
 
 .links {
@@ -30,7 +30,8 @@
 
 .links a {
   font-size: 40px;
-  color: black; /* Link color */
+  color: black;
+  cursor: pointer;
 }
 
 .toggle-button {
@@ -50,7 +51,7 @@
 
 @media (max-width: 768px) {
   .bg {
-    width: 300px; /* Adjust width for mobile */
+    width: 300px;
   }
 
   .links a {

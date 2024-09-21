@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import "./sidebar.css";
 import { ToggleButton } from "./toggleButton/ToggleButton";
@@ -14,7 +14,7 @@ const variants = {
   closed: {
     clipPath: "circle(30px at 50px 50px)",
     transition: {
-      delay: 0.5,
+      delay: 0,
       type: "spring",
       stiffness: 400,
       damping: 40,
@@ -42,7 +42,7 @@ const itemVariants = {
     opacity: 1,
   },
   closed: {
-    y: 50,
+    y: 0,
     opacity: 0,
   },
 };
@@ -50,6 +50,7 @@ const itemVariants = {
 export const Sidebar = () => {
   const items = ["Home", "Projects", "About", "Contact"];
   const [open, setOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () => setOpen(!open);
 
@@ -63,8 +64,26 @@ export const Sidebar = () => {
     }
   };
 
+  const handleClickOutside = (event) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [open]);
+
   return (
-    <motion.div className="sidebar" animate={open ? "open" : "closed"}>
+    <motion.div className="sidebar" animate={open ? "open" : "closed"} ref={sidebarRef}>
       <motion.div className="bg" variants={variants}>
         <motion.div className="links" variants={variantsLink}>
           {items.map((item) => (
