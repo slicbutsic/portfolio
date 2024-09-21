@@ -66,7 +66,7 @@ export const Sidebar = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               onClick={toggleSidebar}
-              className="font-thin tracking-widest"
+              className="mt-6 text-black text-4xl font-thin tracking-widest transform transition-transform duration-300 hover:scale-[1.2]"
             >
               {item}
             </motion.a>

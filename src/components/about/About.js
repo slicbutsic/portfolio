@@ -25,33 +25,36 @@ export const About = () => {
           </div>
 
           {/* Text Section */}
-          <div className="max-w-lg text-center">
-            <h2 className="text-white text-3xl font-thin tracking-widest mb-4 text-left aboutMe">
-              About me
-            </h2>
-            <p className="text-white font-thin tracking-widest text-left aboutMeText">
-              My background in Marketing and Business has equipped me with a strong
-              foundation in strategic thinking and project management. <br />
+          <div className="bg-white p-4 rounded-lg shadow-lg backgroundBoxAbout">
+  <div className="max-w-lg text-center">
+    <h2 className="text-white text-3xl font-thin tracking-widest mb-4 text-left aboutMe">
+      About me
+    </h2>
+    <p className="text-white font-thin tracking-widest text-left aboutMeText">
+      My background in Marketing and Business has equipped me with a strong
+      foundation in strategic thinking and project management. <br />
 
-              <br /> In early 2023,
-              I decided to pivot to a career in software development, driven by a
-              passion for problem-solving and a keen interest in programming.
-              <br />
-              <br />
-              To support myself during this transition, I took on a hospitality job,
-              where I developed resilience, adaptability, and a strong work ethic.
-              <br />
-              <br />
+      <br /> In early 2023,
+      I decided to pivot to a career in software development, driven by a
+      passion for problem-solving and a keen interest in programming.
+      <br />
+      <br />
+      To support myself during this transition, I took on a hospitality job,
+      where I developed resilience, adaptability, and a strong work ethic.
+      <br />
+      <br />
 
-              This blend of marketing and hospitality experience has given me a
-              strong ability to overcome challenges and adapt to new environments.
-              <br />
-              <br />
+      This blend of marketing and hospitality experience has given me a
+      strong ability to overcome challenges and adapt to new environments.
+      <br />
+      <br />
 
-              Since then, I have dedicated myself to upskilling in software development,
-              tackling technical challenges with enthusiasm and commitment.
-            </p>
-          </div>
+      Since then, I have dedicated myself to upskilling in software development,
+      tackling technical challenges with enthusiasm and commitment.
+    </p>
+  </div>
+</div>
+
         </div>
       </div>
     </>
