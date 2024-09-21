@@ -1,12 +1,9 @@
 .aboutContainer {
-  /* background-color: red; */
   height: 100vh;
 }
 
 .backgroundBoxAbout {
-  /* background-color: #333333; */
-  background-color: rgba(51, 51, 51, 0.9); /* Adjust the last value (0.8) for transparency */
-  /* height: 100vh; */
+  background-color: rgba(51, 51, 51, 0.9);
 }
 
 .aboutMeText {
@@ -14,14 +11,12 @@
   font-size: 18px;
 }
 
-
 .CV {
   width: 200px;
   height: 300px;
   cursor: pointer;
 }
 
-/* about.css */
 .CV {
   cursor: pointer;
 }

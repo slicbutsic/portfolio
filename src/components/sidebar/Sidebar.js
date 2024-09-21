@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import "./sidebar.css"; // Use CSS instead of SCSS
+import "./sidebar.css";
 import { ToggleButton } from "./toggleButton/ToggleButton";
-
 
 const variants = {
   open: {
@@ -54,18 +53,27 @@ export const Sidebar = () => {
 
   const toggleSidebar = () => setOpen(!open);
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth'
+      });
+      toggleSidebar();
+    }
+  };
+
   return (
     <motion.div className="sidebar" animate={open ? "open" : "closed"}>
       <motion.div className="bg" variants={variants}>
         <motion.div className="links" variants={variantsLink}>
           {items.map((item) => (
             <motion.a
-              href={`#${item}`}
               key={item}
+              onClick={() => scrollToSection(item.toLowerCase())}
               variants={itemVariants}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              onClick={toggleSidebar}
               className="mt-6 text-black text-4xl font-thin tracking-widest transform transition-transform duration-300 hover:scale-[1.2]"
             >
               {item}

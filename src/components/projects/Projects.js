@@ -3,7 +3,6 @@ import projectOne from '../../images/projectOne.png';
 import projectTwo from '../../images/projectTwo.png';
 import './projects.css';
 
-
 const projects = [
   {
     image: projectOne,
@@ -24,7 +23,7 @@ const projects = [
 export const Projects = () => {
   return (
     <>
-      <div className="projectsContainer">
+      <div id='projects' className="projectsContainer">
         <h2 className="projectHeading text-white text-5xl font-thin tracking-widest mb-8 text-center">Projects</h2>
         <div className="box-projects grid gap-8">
           {projects.map((project, index) => (
@@ -34,7 +33,7 @@ export const Projects = () => {
             >
               <div className="text-white pb-0 pt-2 px-4 flex-col items-start">
               </div>
-              <div className="overflow-visible py-2 ">
+              <div className="overflow-visible py-2">
                 <img className='rounded-md' src={project.image} alt={project.name} width={300} />
               </div>
               <div>
@@ -59,16 +58,14 @@ export const Projects = () => {
                     </svg>
                   </a>
                   <a
-  href={project.url}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="relative inline-flex items-center justify-center gap-2 bg-white text-[#4831d4] font-thin tracking-widest p-1 px-4 rounded overflow-hidden cursor-pointer visitButton"
->
-  Visit
-  <span className="absolute top-0 left-[-100%] h-full w-full bg-gradient-to-r from-gray-500 to-white transition-all duration-300 ease-in-out"></span>
-</a>
-
-
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative inline-flex items-center justify-center gap-2 bg-white text-[#4831d4] font-thin tracking-widest p-1 px-4 rounded overflow-hidden cursor-pointer visitButton"
+                  >
+                    Visit
+                    <span className="absolute top-0 left-[-100%] h-full w-full bg-gradient-to-r from-gray-500 to-white transition-all duration-300 ease-in-out"></span>
+                  </a>
                 </div>
               </div>
             </div>

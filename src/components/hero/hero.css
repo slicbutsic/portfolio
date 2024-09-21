@@ -1,6 +1,7 @@
 /* Big Div */
 .heroContainer{
   height: 100vh;
+  padding-top: 50px;
 }
 
 /* Logos */
@@ -44,10 +45,10 @@
 }
 
 /* Text: */
-
 .nameAndJobPrimaryDiv {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin: 200px 150px 0 0;
 }
+
