@@ -10,10 +10,9 @@ const Mountains = () => {
     offset: ["start start", "end start"],
   });
 
-  // Adjust the speed by changing the values here
-  const yText = useTransform(scrollYProgress, [0, 1], ["-30%", "220%"]); // For Creating Ideas
-  const yBgSun = useTransform(scrollYProgress, [0, 1], ["-20%", "100%"]); // Adjust speed for Sun
-  const xBgStars = useTransform(scrollYProgress, [0, 1], ["0%", "110%"]); // Adjust speed for Stars
+  const yText = useTransform(scrollYProgress, [0, 1], ["-30%", "220%"]);
+  const yBgSun = useTransform(scrollYProgress, [0, 1], ["-20%", "100%"]);
+  const xBgStars = useTransform(scrollYProgress, [0, 1], ["0%", "110%"]);
 
   return (
     <div
@@ -28,15 +27,15 @@ const Mountains = () => {
       </motion.h1>
       <motion.div
         className="stars"
-        style={{ x: xBgStars }} // Apply adjusted transform for scrolling effect to the right
+        style={{ x: xBgStars }}
       ></motion.div>
       <motion.div
         className="planets"
-        style={{ y: yBgSun }} // Apply adjusted transform for scrolling effect
+        style={{ y: yBgSun }}
       ></motion.div>
       <motion.div
         className="sun"
-        style={{ y: yBgSun }} // Apply adjusted transform for scrolling effect
+        style={{ y: yBgSun }} 
       ></motion.div>
       <motion.div className="mountains"></motion.div>
     </div>

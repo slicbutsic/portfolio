@@ -1,51 +1,94 @@
 .parallax {
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(180deg, #111132, #505064); /* Gradient background */
+  background: linear-gradient(180deg, #111132, #505064);
 }
 
 .parallax h1 {
-  font-size: 100px;
-  color: white; /* Ensure the text is visible against your background */
+  font-size: 5vw;
+  color: white;
   text-align: center;
   position: relative;
-  z-index: 4; /* Above planets */
-  margin: 0; /* Remove default margin */
+  z-index: 4;
+  margin: 0;
 }
 
-.parallax .stars {
-  background-image: url("../../images/stars.png"); /* Ensure correct path */
-  background-size: cover;
-  background-position: bottom;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1; /* Bottom layer */
-}
-
-
-
-.parallax .sun {
-  background-image: url("../../images/sun.png"); /* Ensure correct path */
+.parallax .stars,
+.parallax .planets,
+.parallax .sun,
+.parallax .mountains {
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 3; /* Above planets */
+}
+
+.parallax .stars {
+  background-image: url("../../images/stars.png");
+  z-index: 1;
+}
+
+.parallax .sun {
+  background-image: url("../../images/sun.png");
+  z-index: 3;
 }
 
 .parallax .mountains {
-  background-image: url("../../images/mountains.png"); /* Ensure correct path */
-  background-size: cover;
-  background-position: bottom;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 5; /* Top layer */
+  background-image: url("../../images/mountains.png");
+  z-index: 5;
+}
+
+@media (max-width: 1024px) {
+  .parallax {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .parallax h1 {
+    font-size: 7vw;
+  }
+
+  .parallax .mountains {
+    background-size: 150%;
+    background-position: bottom;
+  }
+
+  .parallax .planets {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .parallax .sun {
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+
+  .parallax .planets {
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  .parallax .mountains {
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .parallax .mountains {
+    background-size: 120%;
+  }
 }
