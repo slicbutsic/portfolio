@@ -1,7 +1,9 @@
 /* Big Div */
-.heroContainer{
+.heroContainer {
   height: 100vh;
   padding-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Logos */
@@ -9,10 +11,6 @@
   display: block;
   width: auto;
   object-fit: contain;
-}
-
-.instaLogo {
-  height: 28px;
 }
 
 .logos a {
@@ -29,26 +27,238 @@
   gap: 10px;
 }
 
-.linkedinLogo{
+.linkedinLogo {
   height: 30px;
-  margin-bottom: 5px;
 }
 
 .githubLogo {
   height: 29px;
-  margin-bottom: 7px;
 }
 
 .instaLogo {
   height: 43px;
-  margin-bottom: 4px;
 }
 
-/* Text: */
+/* Text */
 .nameAndJobPrimaryDiv {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  margin: 200px 150px 0 0;
+  align-items: center;
+  flex-grow: 1;
+  margin: -200px 150px 0 0;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .heroContainer {
+    padding-top: 30px;
+  }
+
+  .githubLogo {
+    height: 28px;
+    margin-top: 30px;
+  }
+
+  .linkedinLogo {
+    margin-top: 30px;
+  }
+
+  .instaLogo {
+    height: 40px !important;
+    margin-top: 30px;
+  }
+
+  .nameAndJobPrimaryDiv {
+    margin: -40px 100px 0 0;
+  }
+
+  .nameAndJob h1 {
+    font-size: 2.5rem;
+  }
+
+  .nameAndJob h2 {
+    font-size: 2rem;
+  }
+
+  .nameAndJob {
+  margin: -120px 150px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .githubLogo {
+    height: 30px;
+    margin-top: 30px;
+  }
+
+  .linkedinLogo {
+    margin-top: 30px;
+  }
+
+  .instaLogo {
+    height: 40px !important;
+    margin-top: 30px;
+  }
+
+  .nameAndJobPrimaryDiv {
+    margin: -30px 50px 0 0;
+  }
+
+  .nameAndJob h1 {
+    font-size: 2rem;
+  }
+
+  .nameAndJob h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 637px) {
+  .githubLogo {
+    height: 30px;
+    margin-top: 29px;
+  }
+
+  .linkedinLogo {
+    margin-top: 30px;
+  }
+
+  .instaLogo {
+    height: 43px !important;
+    margin-top: 30px;
+  }
+
+  .nameAndJobPrimaryDiv {
+    margin: -30px 30px 0 20px;
+  }
+
+  .nameAndJob h1 {
+    font-size: 1.8rem;
+  }
+
+  .nameAndJob h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .githubLogo {
+    height: 27px;
+    margin-top: 28px;
+  }
+
+  .linkedinLogo {
+    margin-top: 30px;
+  }
+
+  .instaLogo {
+    height: 38px !important;
+    margin-top: 28px;
+  }
+
+  .nameAndJobPrimaryDiv {
+    margin: -20px 20px 0 10px;
+  }
+
+  .nameAndJob h1 {
+    font-size: 1.4rem;
+  }
+
+  .nameAndJob h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .githubLogo {
+    height: 26px;
+    margin-top: 29px;
+  }
+
+  .linkedinLogo {
+    margin-top: 30px;
+  }
+
+  .instaLogo {
+    height: 36px !important;
+    margin-top: 30px;
+  }
+
+  .nameAndJobPrimaryDiv {
+    margin: -20px 20px 0 30px;
+  }
+
+  .nameAndJob h1 {
+    font-size: 1.4rem;
+  }
+
+  .nameAndJob h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .githubLogo {
+    height: 18px;
+    margin-top: 29px;
+  }
+
+  .linkedinLogo {
+    height: 20px;
+    margin-top: 30px;
+  }
+
+  .instaLogo {
+    height: 28px !important;
+    margin-top: 30px;
+  }
+
+  .nameAndJobPrimaryDiv {
+    margin: -10px 10px 0 40px;
+  }
+
+  .nameAndJob h1 {
+    font-size: 1.2rem;
+  }
+
+  .nameAndJob h2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 462px) {
+  .logos img {
+    height: 14px; 
+  }
+
+  .nameAndJobPrimaryDiv {
+    margin: -10px 10px 0 30px;
+  }
+
+  .nameAndJob h1 {
+    font-size: 1rem;
+  }
+
+  .nameAndJob h2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 417px) {
+  .logos img {
+    height: 12px;
+  }
+
+  .nameAndJobPrimaryDiv {
+    margin: -10px 10px 0 20px;
+  }
+
+  .nameAndJob h1 {
+    font-size: 0.9rem;
+  }
+
+  .nameAndJob h2 {
+    font-size: 0.7rem;
+  }
+}

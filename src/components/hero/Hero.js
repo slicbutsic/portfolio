@@ -5,7 +5,7 @@ import github from '../../images/github.png';
 
 export const Hero = () => {
   return (
-    <div id="home" className='heroContainer'> {/* Adicionado o ID 'home' aqui */}
+    <div id="home" className='heroContainer'>
       <div className='logos'>
         <a className='urlLink' href="https://www.linkedin.com/in/siviglialucas/" target="_blank" rel="noopener noreferrer">
           <img className='linkedinLogo' src={linkedin} alt="LinkedIn" />
