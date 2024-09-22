@@ -6,7 +6,7 @@ export const About = () => {
     <div id="about" className="flex justify-center items-center aboutContainer">
       <div className="bg-white p-4 rounded-lg shadow-lg backgroundBoxAbout">
         <div className="text-center aboutMeText">
-          <h2 className="text-white text-3xl font-thin tracking-widest mb-4 text-left aboutMe">
+          <h2 className="text-white text-3xl font-thin tracking-widest mb-4 text-center aboutMe">
             About
           </h2>
           <p className="text-white font-thin tracking-widest ">
