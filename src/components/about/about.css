@@ -68,8 +68,6 @@
     font-size: 2rem;
   }
 
-
-
   .backgroundBoxAbout {
     width: 95%;
   }
@@ -110,15 +108,15 @@
   }
 
   .aboutMeText h2 {
-    font-size: 1.5rem; /* Adjust heading size */
+    font-size: 1.5rem;
   }
 
   .skillIcons img {
-    width: 20px; /* Adjust icon size */
+    width: 20px;
   }
 
   .backgroundBoxAbout {
-    padding: 10px; /* Reduce padding */
+    padding: 10px;
   }
 }
 
@@ -128,14 +126,14 @@
   }
 
   .aboutMeText h2 {
-    font-size: 1.25rem; /* Further adjust heading size */
+    font-size: 1.25rem;
   }
 
   .skillIcons img {
-    width: 18px; /* Further adjust icon size */
+    width: 18px;
   }
 
   .backgroundBoxAbout {
-    padding: 8px; /* Further reduce padding */
+    padding: 8px; 
   }
 }

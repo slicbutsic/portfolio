@@ -1,10 +1,5 @@
 .toggle-button {
   z-index: 1000;
-  /* position: absolute;  */
   top: 40px;
   left: 38px;
-  /* transform: translate(-50%, -50%); */
-  /* background-color: transparent; */
-  /* border: none;  */
-  /* cursor: pointer;  */
 }
