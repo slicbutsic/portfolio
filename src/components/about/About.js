@@ -28,6 +28,7 @@ export const About = () => {
           <br />
           <a
             href='/CV.pdf'
+            download
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center justify-center gap-2 bg-white text-[#4831d4] font-thin tracking-widest p-1 px-4 rounded overflow-hidden cursor-pointer downloadCV">

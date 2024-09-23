@@ -17,6 +17,7 @@
   display: inline-block;
   padding: 10px;
   cursor: pointer;
+  position: relative;
 }
 
 .logos {

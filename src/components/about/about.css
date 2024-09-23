@@ -67,6 +67,11 @@
 }
 
 @media (max-width: 1024px) {
+  .aboutContainer {
+    margin: 100px 0;
+  }
+
+
   .aboutMeText {
     font-size: 16px;
   }
