@@ -1,6 +1,6 @@
 /* Big Div */
 .heroContainer {
-  height: 100vh;
+  height: 105vh;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -228,8 +228,12 @@
 }
 
 @media (max-width: 462px) {
-  .logos img {
-    height: 14px;
+  .linkedinLogo {
+    height: 20px;
+  }
+
+  .githubLogo {
+    height: 21px;
   }
 
   .nameAndJobPrimaryDiv {
@@ -246,8 +250,13 @@
 }
 
 @media (max-width: 417px) {
-  .logos img {
-    height: 12px;
+
+  .linkedinLogo {
+    height: 20px;
+  }
+
+  .githubLogo {
+    height: 21px;
   }
 
   .nameAndJobPrimaryDiv {
@@ -255,11 +264,14 @@
   }
 
   .nameAndJob h1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin-left: 90px;
   }
 
   .nameAndJob h2 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    width: 300px;
+    margin-left: 90px;
   }
 }
 
