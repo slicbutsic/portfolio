@@ -33,6 +33,9 @@ To run this project locally, follow these steps:
    cd portfolio
    npm install
    npm start
+or
+
+https://slicbutsic.github.io/portfolio/
 
 ## Contact:
 
