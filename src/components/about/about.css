@@ -1,56 +1,4 @@
-/* .aboutContainer {
-  height: 100vh;
-}
-
-.backgroundBoxAbout {
-  background-color: rgba(51, 51, 51, 0.9);
-  height: 90vh;
-  width: 850px;
-}
-
-.aboutMe {
-  display: flex;
-  justify-content: center;
-}
-
-.aboutMeText {
-  font-size: 18px;
-
-  width: 800px;
-}
-
-.downloadCV {
-  position: relative;
-  overflow: hidden;
-}
-
-.downloadCV::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(90deg, gray, white);
-  transition: left 0.8s ease;
-  z-index: 0;
-}
-
-.downloadCV:hover::before {
-  left: 100%;
-}
-
-.downloadCV:hover {
-  color: white;
-  background-color: #4831d4;
-}
-
-.skillIcons {
-  gap: 20px;
-  margin-top: 30px;
-}
- */
- .aboutContainer {
+.aboutContainer {
   min-height: 100vh;
   padding: 20px;
 }
@@ -73,6 +21,10 @@
   width: 100%;
   max-width: 800px;
   margin: auto;
+}
+
+.aboutMeText h2 {
+  font-size: 40px;
 }
 
 .downloadCV {
@@ -112,6 +64,12 @@
     font-size: 16px;
   }
 
+  .aboutMeText h2 {
+    font-size: 2rem;
+  }
+
+
+
   .backgroundBoxAbout {
     width: 95%;
   }
@@ -133,6 +91,10 @@
 }
 
 @media (max-width: 480px) {
+  .aboutContainer {
+    margin-top: 40px;
+  }
+
   .aboutMeText {
     font-size: 12px;
   }
@@ -142,3 +104,38 @@
   }
 }
 
+@media (max-width: 375px) {
+  .aboutMeText {
+    font-size: 10px;
+  }
+
+  .aboutMeText h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .skillIcons img {
+    width: 20px; /* Adjust icon size */
+  }
+
+  .backgroundBoxAbout {
+    padding: 10px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutMeText {
+    font-size: 9px;
+  }
+
+  .aboutMeText h2 {
+    font-size: 1.25rem; /* Further adjust heading size */
+  }
+
+  .skillIcons img {
+    width: 18px; /* Further adjust icon size */
+  }
+
+  .backgroundBoxAbout {
+    padding: 8px; /* Further reduce padding */
+  }
+}

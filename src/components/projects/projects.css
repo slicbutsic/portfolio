@@ -1,73 +1,22 @@
-/* .projectsContainer {
-  height: 100vh;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 1rem;
-}
-
-.projectHeading {
-  margin: 50px 0 50px 0%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  justify-items: center;
-}
-
-.projectCard {
-  width: 320px;
-  background-color: rgba(51, 51, 51, 0.9);
-}
-
-.visitButton {
-  position: relative;
-  overflow: hidden;
-}
-
-.visitButton::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(90deg, gray, white);
-  transition: left 0.8s ease;
-  z-index: 0;
-}
-
-.visitButton:hover::before {
-  left: 100%;
-}
-
-.visitButton:hover {
-  color: white;
-  background-color: #4831d4;
-}
-
-@media (max-width: 723px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .projectCard {
-    width: 90%;
-    max-width: 350px;
-  }
-} */
-
 .projectsContainer {
-  height: auto;
   min-height: 100vh;
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 1rem;
 }
 
+.projectsContainer h2 {
+  font-size: 40px;
+}
+
+.box-projects {
+  margin-top: 100px;
+}
+
 .projectHeading {
-  margin: 50px 0;
+  margin: 100px 0;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .grid {
@@ -109,10 +58,13 @@
   background-color: #4831d4;
 }
 
-/* Responsive styles */
 @media (max-width: 1024px) {
   .projectsContainer {
     padding: 0 2rem;
+  }
+
+  .projectsContainer h2 {
+    font-size: 2rem;
   }
 
   .projectHeading {

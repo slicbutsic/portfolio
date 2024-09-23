@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: -10px;
+  overflow-x: hidden;
+}
+
 .parallax {
   width: 100%;
   height: 100vh;
@@ -90,5 +99,33 @@
 
   .parallax .mountains {
     background-size: 120%;
+  }
+}
+
+@media (max-width: 375px) {
+  .parallax h1 {
+    font-size: 8vw;
+  }
+
+  .parallax .mountains {
+    background-size: 140%;
+  }
+
+  .parallax .sun {
+    background-size: 160%;
+  }
+}
+
+@media (max-width: 320px) {
+  .parallax h1 {
+    font-size: 9vw;
+  }
+
+  .parallax .mountains {
+    background-size: 150%;
+  }
+
+  .parallax .sun {
+    background-size: 180%; 
   }
 }
