@@ -14,20 +14,19 @@ export const About = () => {
             passion for problem-solving and a keen interest in programming.
             <br /><br />
             My background in Marketing and Business has equipped me with a strong
-            foundation in strategic thinking and project management.
+            foundation in strategic thinking and project management,
+            allowing me to approach software development with a unique perspective.
             <br /><br />
-            To support myself during this transition, I took on a hospitality job,
-            where I developed resilience, adaptability, and a strong work ethic.
-            <br /><br />
-            This blend of marketing and hospitality experience has given me a
-            strong ability to overcome challenges and adapt to new environments.
+            Throughout this transition, I have embraced challenges that have fostered resilience and adaptability.
             <br /><br />
             Since then, I have dedicated myself to upskilling in software development,
             tackling technical challenges with enthusiasm and commitment.
+            <br /><br />
+            I am excited to leverage my diverse experiences to create innovative solutions and contribute meaningfully to the tech community.
           </p>
           <br />
           <a
-            href='https://slicbutsic.github.io/portfolio/CV.pdf?v=2'
+            href='https://slicbutsic.github.io/portfolio/CV.pdf'
             download
             target="_blank"
             rel="noopener noreferrer"
