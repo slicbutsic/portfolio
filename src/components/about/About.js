@@ -27,8 +27,8 @@ export const About = () => {
           </p>
           <br />
           <a
-            // href='https://slicbutsic.github.io/portfolio/CV.pdf'
-            href='../../../public/Lucas - CV.pdf'
+            href='https://slicbutsic.github.io/portfolio/CV.pdf'
+            // href='../../../public/Lucas - CV.pdf'
             download
             target="_blank"
             rel="noopener noreferrer"
