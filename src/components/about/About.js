@@ -10,11 +10,11 @@ export const About = () => {
             About
           </h2>
           <p className="text-white font-thin tracking-widest ">
-            My background in Marketing and Business has equipped me with a strong
-            foundation in strategic thinking and project management.
-            <br /><br />
             In early 2023, I decided to pivot to a career in software development, driven by a
             passion for problem-solving and a keen interest in programming.
+            <br /><br />
+            My background in Marketing and Business has equipped me with a strong
+            foundation in strategic thinking and project management.
             <br /><br />
             To support myself during this transition, I took on a hospitality job,
             where I developed resilience, adaptability, and a strong work ethic.
@@ -27,7 +27,8 @@ export const About = () => {
           </p>
           <br />
           <a
-            href='https://slicbutsic.github.io/portfolio/CV.pdf'
+            // href='https://slicbutsic.github.io/portfolio/CV.pdf'
+            href='../../../public/Lucas - CV.pdf'
             download
             target="_blank"
             rel="noopener noreferrer"
@@ -37,9 +38,11 @@ export const About = () => {
           </a>
 
           <div className='skillIcons flex justify-center flex-wrap gap-2'>
+            <img alt="Next.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+            <img alt="TypeScript" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+            <img alt="js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
             <img alt="React" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
             <img alt="Tailwind" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-            <img alt="js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
             <img alt="Ruby" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
             <img alt="Ruby on Rails" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-original-wordmark.svg" />
             <img alt="SQL" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
@@ -49,6 +52,7 @@ export const About = () => {
             <img alt="Sass" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
             <img alt="Bootstrap" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
             <img alt="Heroku" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original.svg" />
+            <img alt="Vercel" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg" />
             <img alt="HTML" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
           </div>
         </div>
