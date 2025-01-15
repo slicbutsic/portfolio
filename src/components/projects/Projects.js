@@ -97,12 +97,23 @@ export const Projects = () => {
                 </div>
               </div>
               <div className="absolute bottom-[-6px] right-[-6px]">
-                <img
-                  src={project.frameworkLogo}
-                  alt={project.frameworkAlt}
-                  width="50"
-                  className="rounded-full"
-                />
+                   {project.frameworkAlt === 'Ruby on Rails' && (
+                    <div className="absolute bottom-0 right-0 w-14 h-14 rounded-full bg-white flex items-center justify-center">
+                      <img
+                        src={project.frameworkLogo}
+                        alt={project.frameworkAlt}
+                        width="50"
+                      />
+                    </div>
+                  )}
+                  {project.frameworkAlt !== 'Ruby on Rails' && (
+                    <img
+                      src={project.frameworkLogo}
+                      alt={project.frameworkAlt}
+                      width="50"
+                      className="rounded-full"
+                    />
+                  )}
               </div>
             </div>
           ))}
