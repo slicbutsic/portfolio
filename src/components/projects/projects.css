@@ -77,11 +77,11 @@
   background-color: #6955ea;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .box-projects .projectCard:last-child {
-    margin-bottom: 110px; 
+    margin-bottom: 0;
   }
-}
+} */
 
 @media (max-width: 1024px) {
   .projectsContainer {

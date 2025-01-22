@@ -1,49 +1,7 @@
 import React from 'react';
-import projectOne from '../../images/projectOne.png';
-import projectTwo from '../../images/projectTwo.png';
-import projectThree from '../../images/projectThree.png';
-import projectFour from '../../images/projectFour.png';
 import './projects.css';
 
-const projects = [
-  {
-    image: projectOne,
-    name: 'GameCard Rentals',
-    description: 'An Airbnb-inspired platform for renting Pokémon cards, featuring listings, search and filter options, booking management, and an interactive map.',
-    url: 'https://pokemon-rental-c69de4a4ee1b.herokuapp.com',
-    githubUrl: 'https://github.com/slicbutsic/pokemon-rental',
-    frameworkLogo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg',
-    frameworkAlt: 'Ruby on Rails',
-  },
-  {
-    image: projectTwo,
-    name: 'LearnWise',
-    description: 'A platform that offers education solutions with payment integration through Stripe, featuring a chatbot with AI assistance and chatrooms within the courses.',
-    url: 'https://www.learn-wise.live',
-    githubUrl: 'https://github.com/rikkie7/learnwise',
-    frameworkLogo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg',
-    frameworkAlt: 'Ruby on Rails',
-  },
-  {
-    image: projectThree,
-    name: 'Daily Grind',
-    description: 'An online store. Key features include a wishlist for saving favorite items, a shopping cart for easy order management, a delivery rate calculator for shipping estimates, and secure payments through Stripe.',
-    url: 'https://daily-grind-coffee-shop-8c78059af85c.herokuapp.com',
-    githubUrl: 'https://github.com/slicbutsic/daily-grind-coffee-shop',
-    frameworkLogo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg',
-    frameworkAlt: 'Ruby on Rails',
-  },
-  {
-    image: projectFour,
-    name: 'Asteroids Game',
-    description: 'A classic arcade-style space shooter game recreated with vanilla JavaScript. Features include dynamic asteroid generation, responsive spaceship controls, score tracking, and smooth animations for an engaging gameplay experience.',
-    url: 'https://slicbutsic.github.io/asteroids-js/',
-    githubUrl: 'https://github.com/slicbutsic/asteroids-js',
-    frameworkLogo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-    frameworkAlt: 'JavaScript',
-    newProject: true
-  }
-];
+import { projects } from './projects-object';
 
 export const Projects = () => {
   return (
@@ -54,7 +12,7 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="relative py-2 px-3 projectCard rounded-lg overflow-visible bg-[rgba(51, 51, 51)]"
+              className=  "relative py-2 px-3 projectCard rounded-lg overflow-visible bg-[rgba(51, 51, 51)]"
             >
               <div className="text-white pb-0 pt-2 px-4 flex-col items-start">
                 {project.newProject && (
@@ -76,6 +34,7 @@ export const Projects = () => {
                     rel="noopener noreferrer"
                     className="text-white hover:text-gray-300 transition duration-200 mr-4"
                   >
+                    {/* github svg */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -96,6 +55,7 @@ export const Projects = () => {
                   </a>
                 </div>
               </div>
+              {/* framework stamp start */}
               <div className="absolute bottom-[-6px] right-[-6px]">
                    {project.frameworkAlt === 'Ruby on Rails' && (
                     <div className="absolute bottom-0 right-0 w-14 h-14 rounded-full bg-white flex items-center justify-center">
@@ -115,6 +75,7 @@ export const Projects = () => {
                     />
                   )}
               </div>
+              {/* framework stamp end */}
             </div>
           ))}
         </div>
