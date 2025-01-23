@@ -79,7 +79,7 @@
 
 
 /* adding mg-b to the last 2 cards for big screens */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     /* gap: 2rem; */
