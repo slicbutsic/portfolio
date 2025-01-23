@@ -50,7 +50,7 @@ export const Projects = () => {
                     rel="noopener noreferrer"
                     className="relative inline-flex items-center justify-center gap-2 bg-white text-[#4831d4] font-thin tracking-widest p-1 px-4 rounded overflow-hidden cursor-pointer visitButton"
                   >
-                    Visit
+                    Visit 
                     <span className="absolute top-0 left-[-100%] h-full w-full bg-gradient-to-r from-gray-500 to-white transition-all duration-300 ease-in-out"></span>
                   </a>
                 </div>
