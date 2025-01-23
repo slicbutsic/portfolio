@@ -77,11 +77,21 @@
   background-color: #6955ea;
 }
 
-/* @media (min-width: 1024px) {
-  .box-projects .projectCard:last-child {
-    margin-bottom: 0;
+
+/* adding mg-b to the last 2 cards for big screens */
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* gap: 2rem; */
   }
-} */
+
+  /* Add margin-bottom to the last two cards */
+  .box-projects .projectCard:nth-last-child(2),
+  .box-projects .projectCard:nth-last-child(1) {
+    margin-bottom: 7rem; /* Adjust this value as needed */
+  }
+}
+
 
 @media (max-width: 1024px) {
   .projectsContainer {
