@@ -17,8 +17,8 @@ export const Projects = () => {
               <div className="text-white pb-0 pt-2 px-4 flex-col items-start">
                 {project.newProject && (
                   <span className="new-label">
-                    {/* Just Dropped */}
-                    In Update
+                    Just Dropped
+                    {/* Under Update */}
                   </span>
                 )}
               </div>
@@ -28,35 +28,6 @@ export const Projects = () => {
               <div>
                 <h4 className="font-bold tracking-widest text-large text-white text-center">{project.name}</h4>
                 <p className="text-white font-thin tracking-widest">{project.description}</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div className="flex justify-center items-center mt-2">
                   <a
                     href={project.githubUrl}
@@ -84,10 +55,6 @@ export const Projects = () => {
                     <span className="absolute top-0 left-[-100%] h-full w-full bg-gradient-to-r from-gray-500 to-white transition-all duration-300 ease-in-out"></span>
                   </a>
                 </div>
-
-
-
-
               </div>
               {/* framework stamp start */}
               <div className="absolute bottom-[-6px] right-[-6px]">
