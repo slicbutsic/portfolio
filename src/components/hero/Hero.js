@@ -1,6 +1,5 @@
 import './hero.css';
 import linkedin from '../../images/linkedin.png';
-import instagram from '../../images/instagram.png';
 import github from '../../images/github.png';
 
 export const Hero = () => {
@@ -12,9 +11,6 @@ export const Hero = () => {
         </a>
         <a className='urlLink' href="https://github.com/slicbutsic" target="_blank" rel="noopener noreferrer">
           <img className='githubLogo urlLink' src={github} alt="GitHub" />
-        </a>
-        <a className='urlLink' href="https://www.instagram.com/siviglialucas/" target="_blank" rel="noopener noreferrer">
-          <img className='instaLogo' src={instagram} alt="Instagram" />
         </a>
       </div>
       <div className='flex items-center justify-between nameAndJobPrimaryDiv'>
