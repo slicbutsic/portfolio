@@ -77,19 +77,37 @@
   background-color: #6955ea;
 }
 
+.in-progress-label {
+  background-color: #4831d4;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.in-progress-label:hover {
+  background-color: #6955ea;
+}
 
 /* adding mg-b to the last 2 cards for big screens */
 @media (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    /* gap: 2rem; */
+    gap: 2rem;
+    margin-bottom: 8rem;
   }
 
   /* Add margin-bottom to the last two cards */
-  .box-projects .projectCard:nth-last-child(2),
-  .box-projects .projectCard:nth-last-child(1) {
-    margin-bottom: 7rem; /* Adjust this value as needed */
-  }
+  /* .box-projects .projectCard:nth-last-child(2),
+  .box-projects .projectCard:nth-last-child(1) { */
+    /* margin-bottom: 2rem; Adjust this value as needed */
+  /* } */
 }
 
 

@@ -10,20 +10,20 @@ export const About = () => {
             About
           </h2>
           <p className="text-white font-thin tracking-widest ">
-            In early 2023, I decided to pivot to a career in software development, driven by a
-            passion for problem-solving and a keen interest in programming.
+            In early 2023, I decided to pivot to a career in software development,<br />
+            driven by an interest in problem-solving and a keen curiosity in programming.
             <br /><br />
-            My background in Marketing and Business has equipped me with a strong
-            foundation in strategic thinking and project management,
-            allowing me to approach software development with a unique perspective.
+            My background in Marketing and Business has equipped me with a strong foundation
+            in strategic thinking and project management, allowing me <br />to approach software
+            development with a unique perspective.
             <br /><br />
-            Throughout this transition, I have embraced challenges that have fostered resilience and adaptability.
+            Throughout this transition, I have faced challenges that have <br /> helped me grow,
+            fostering resilience and adaptability.
             <br /><br />
-            Since then, I have dedicated myself to upskilling in software development,
-            tackling technical challenges with enthusiasm and commitment.
+            Since then, I have dedicated myself to advancing my skills
+            in <br /> software development, tackling technical challenges head-on.
             <br /><br />
-            I am excited to leverage my diverse experiences to create innovative solutions and contribute meaningfully to the tech community.
-          </p>
+            I am excited to make meaningful contributions to the tech <br /> community and create innovative solutions.</p>
           <br />
           <a
             href='https://slicbutsic.github.io/portfolio/CV.pdf'
