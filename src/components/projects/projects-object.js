@@ -49,17 +49,16 @@ export const projects = [
     url: 'https://budget-iq-ashen.vercel.app/',
     githubUrl: 'https://github.com/slicbutsic/BudgetIQ',
     frameworkLogo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
-    frameworkAlt: 'Next',
-    newProject: true
+    frameworkAlt: 'Next'
   },
   {
     image: projectSix,
     name: 'Limco CarWash',
-    description: 'Freelance project for a carwash business that allows users to book carwash services, receive email confirmations, and provides an admin account for managing bookings.',
-    url: 'https://budget-iq-ashen.vercel.app/',
+    description: 'Freelance project for a carwash business that allows users to book carwash services, receive email confirmations, and provides an admin account for managing bookings and editing services.',
+    url: 'https://www.limcocarwashevertonpark.com.au',
     githubUrl: 'https://github.com/slicbutsic/car-wash-rails',
     frameworkLogo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg',
     frameworkAlt: 'Ruby on Rails',
-    inProgress: true
+    newProject: true
   }
 ];
